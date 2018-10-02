@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome cust data</title>
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- FontAwesome Icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body class="dark">
+    
+   <div class="container mt-3 col-10 xs-col-7 " id="container-id" style="text-align:center";>
+    <h1 class="display-3 text-light pb-2 pt-4 animated bounceInDown"> TO-DO LIST</h1>
+
+    <div class="row">
+			<div class="helpText col-12 display-5 m-1">
+				<p id="first" class="animated bounceInLeft", style="color: blanchedalmond">Click the item to mark it as complete.</p>
+                <p id="second" class="animated bounceInRight" style="color: orange">Click the "X" to remove the item from your list.</p>
+                <p id="warning-text"></p>
+			</div>
+		</div>
+
+        <div class="row">
+            <div class="col-12 animated flipInX">
+                <input type="text" id="userInput" class="animated slideInUp" placeholder="enter new item to the list" maxlength="27">
+                <button id="enter"><i class="  fas fa-pencil-alt "></i></button>
+
+            </div>
+        </div>
+   <!-- Empty List -->
+		<div class="row">
+            <div class="listItems col-12 animate flash">
+                <ul class="ul-elements col-12 offset-0 col-sm-8 offset-sm-2 "
+                id="listITEM"></ul>
+            </div>
+
+        </div>
+        
+</div>
+
+
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+     
+
+</body>
+</html>
